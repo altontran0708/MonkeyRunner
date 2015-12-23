@@ -1,6 +1,6 @@
 # MonkeyRunner
 
-Research for testing Android UI
+Research for monkeyrunner tool
 
 Integrate
 -------------
