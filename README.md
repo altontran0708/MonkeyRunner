@@ -34,12 +34,12 @@ Export .jar file from Java project
 [![](https://www.dropbox.com/s/tail1z3sgsqh3fe/export_jar_file.png?raw=1)]
 (https://www.dropbox.com/s/tail1z3sgsqh3fe/export_jar_file.png?dl=0)
 
-Copy .jar file to ~/Library/Android/sdk/tools/lib (regular Android sdk path on Mac. For Windows, please replace ~/Library/Android/ to your sdk path) 
+Copy .jar file to ~/Library/Android/sdk/tools/lib (regular Android sdk path on Mac. For Windows, please replace ~/Library/Android/sdk to your sdk path) 
 
 [![](https://www.dropbox.com/s/hdv0ifva8dziqtf/copy_jar_file_to_sdk_lib.png?raw=1)]
 (https://www.dropbox.com/s/hdv0ifva8dziqtf/copy_jar_file_to_sdk_lib.png?dl=0)
 
-Import to the Python class, from &lt;the startup class package name&lgt; import &lt;startup class name&gt;
+Import to the Python class, from &lt;the startup class package name&gt; import &lt;startup class name&gt;
 
 [![](https://www.dropbox.com/s/6tr0f652os4im0n/import_to_python_class.png?raw=1)]
 (https://www.dropbox.com/s/6tr0f652os4im0n/import_to_python_class.png?dl=0)
