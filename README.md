@@ -1,8 +1,8 @@
-# MonkeyRunner
+# MonkeyRunner Sample Project
 
 Research for monkeyrunner tool
 
-Integrate
+How to run
 -------------
 
 ####Run MonkeyRunner with Sample Project
@@ -16,7 +16,8 @@ Execute example-test.py file
 [![](https://photos-1.dropbox.com/t/2/AAD0FQzrRUHXTp5h5jfDKNBKoDkBEmCKGJRbEldjaioiQA/12/231954667/png/32x32/3/1450872000/0/2/run_monkeyrunner.png/ELC6lcQBGImdASAHKAc/tPVlufO4cLnorHVgSPqxdfPcFnVbEqn0R9ryo2ExS8U?size_mode=3&size=800x600)]
 (https://www.dropbox.com/s/gd7qujzwp37airs/run_monkeyrunner.png?dl=0)
 
-####Extending monkeyrunner with Plugins
+Extending monkeyrunner with Plugins
+------------------------------------
 
 Export .jar file from Jython project
 
