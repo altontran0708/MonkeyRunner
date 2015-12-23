@@ -20,7 +20,7 @@ Execute example-test.py file
 Extending MonkeyRunner with plugins
 ------------------------------------
 
-Create Java project from Android Studio, create the startup class and implements Predicate<PythonInterpreter>
+Create Java project from Android Studio, create the startup class and implements Predicate&lt;PythonInterpreter&gt;
 [![](https://www.dropbox.com/s/nrycuuk67b0ur22/create_jython_class.png?raw=1)]
 (https://www.dropbox.com/s/nrycuuk67b0ur22/create_jython_class.png?dl=0)
 
@@ -39,7 +39,7 @@ Copy .jar file to ~/Library/Android/sdk/tools/lib (regular Android sdk path on M
 [![](https://www.dropbox.com/s/hdv0ifva8dziqtf/copy_jar_file_to_sdk_lib.png?raw=1)]
 (https://www.dropbox.com/s/hdv0ifva8dziqtf/copy_jar_file_to_sdk_lib.png?dl=0)
 
-Import to the Python class, from <the startup class package name> import <startup class name>
+Import to the Python class, from &lt;the startup class package name&lgt; import &lt;startup class name&gt;
 
 [![](https://www.dropbox.com/s/6tr0f652os4im0n/import_to_python_class.png?raw=1)]
 (https://www.dropbox.com/s/6tr0f652os4im0n/import_to_python_class.png?dl=0)
