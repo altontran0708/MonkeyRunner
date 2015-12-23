@@ -1,36 +1,50 @@
 # MonkeyRunner Sample Project
 
-Research for monkeyrunner tool
+Research for MonkeyRunner tool
 
 How to run
 -------------
 
-####Run MonkeyRunner with Sample Project
+Run MonkeyRunner from "app" module:
 
-Change Directory to app/src/test/monkeyrunner
+From Android Studio terminal, change directory to app/src/test/monkeyrunner
 - cd app/src/test/monkeyrunner
+- or just drag the monkeyrunner folder to terminal to open as new tab.
 
 Execute example-test.py file 
 - monkeyrunner example-test.py
 
-[![](https://photos-1.dropbox.com/t/2/AAD0FQzrRUHXTp5h5jfDKNBKoDkBEmCKGJRbEldjaioiQA/12/231954667/png/32x32/3/1450872000/0/2/run_monkeyrunner.png/ELC6lcQBGImdASAHKAc/tPVlufO4cLnorHVgSPqxdfPcFnVbEqn0R9ryo2ExS8U?size_mode=3&size=800x600)]
+[![](https://www.dropbox.com/s/gd7qujzwp37airs/run_monkeyrunner.png?raw=1)]
 (https://www.dropbox.com/s/gd7qujzwp37airs/run_monkeyrunner.png?dl=0)
 
-Extending monkeyrunner with Plugins
+Extending MonkeyRunner with plugins
 ------------------------------------
 
-Export .jar file from Jython project
+Create Java project from Android Studio, create the startup class and implements Predicate<PythonInterpreter>
+[![](https://www.dropbox.com/s/nrycuuk67b0ur22/create_jython_class.png?raw=1)]
+(https://www.dropbox.com/s/nrycuuk67b0ur22/create_jython_class.png?dl=0)
 
-[![](https://photos-4.dropbox.com/t/2/AAB8R2b5aB-VdvAT8KfS-rBiu2hBj7HtQPMkp9gFt7x8xw/12/231954667/png/32x32/3/1450872000/0/2/export_jar_file.png/ELC6lcQBGImdASAHKAc/GYX3b_ItsRQ5z5TsGlACtUyqLp5QFqnENMpYcjnnBv8?size_mode=3&size=800x600)]
+Modify the manifest attribute in Java project gradle, key is "MonkeyRunnerStartupRunner" and value is your startup class path
+
+[![](https://www.dropbox.com/s/dpmixn9towx5t0c/modify_manifest_attribute.png?raw=1)]
+(https://www.dropbox.com/s/dpmixn9towx5t0c/modify_manifest_attribute.png?dl=0)
+
+Export .jar file from Java project
+
+[![](https://www.dropbox.com/s/tail1z3sgsqh3fe/export_jar_file.png?raw=1)]
 (https://www.dropbox.com/s/tail1z3sgsqh3fe/export_jar_file.png?dl=0)
 
 Copy .jar file to ~/Library/Android/sdk/tools/lib (regular Android sdk path on Mac. For Windows, please replace ~/Library/Android/ to your sdk path) 
 
-[![](https://photos-6.dropbox.com/t/2/AAA5n_enENU6NhOu9PmWdtLJpALdsreh_9zM40R3tboxsg/12/231954667/png/32x32/3/1450872000/0/2/copy_jar_file_to_sdk_lib.png/ELC6lcQBGImdASAHKAc/PBCwzR79Le0dZsjSVWp-zgDz6y-2Zny3Ujrc1S74dLM?size_mode=3&size=800x600)]
+[![](https://www.dropbox.com/s/hdv0ifva8dziqtf/copy_jar_file_to_sdk_lib.png?raw=1)]
 (https://www.dropbox.com/s/hdv0ifva8dziqtf/copy_jar_file_to_sdk_lib.png?dl=0)
 
-Now instead of executing example-test.py file, 
-Execute example-test-with-extension.py file
+Import to the Python class, from <the startup class package name> import <startup class name>
 
-####More Extension from Python library
+[![](https://www.dropbox.com/s/6tr0f652os4im0n/import_to_python_class.png?raw=1)]
+(https://www.dropbox.com/s/6tr0f652os4im0n/import_to_python_class.png?dl=0)
+
+Now instead of executing example-test.py file, do with example-test-with-extension.py file to test
+
+####More extension from Python library
 https://github.com/dtmilano/AndroidViewClient
